@@ -35,7 +35,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
   return {
     delete: todoText => 
-    dispatch({type:'DELETE_TODO', payload: todoText})
+    dispatch({type:'DELETE_TODO',  todoText})
   }
 }
 //now this container  has access to this.props.delete because of dispatch. it can take in an argument and send
